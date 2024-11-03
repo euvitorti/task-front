@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F3F4F6; /* Fundo claro */
+    color: #111827; /* Texto preto */
+}
+
+header {
+    background-color: #1E3A8A; /* Cabeçalho azul escuro */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem; /* Espaçamento abaixo do cabeçalho */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+main {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 2rem; /* Aumenta o padding */
+    background-color: #FFFFFF; /* Fundo do formulário em branco */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinha os campos do formulário */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espaçamento entre os grupos */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #111827; /* Texto dos rótulos em preto */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 0.75rem; /* Aumenta o padding dos inputs */
+    border: 1px solid #3B82F6; /* Bordas azuis */
+    border-radius: 4px;
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #F9FAFB; /* Fundo dos inputs em cinza claro */
+    color: #111827; /* Texto dos inputs em preto */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #2563EB; /* Borda azul mais escura ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    background-color: #3B82F6; /* Botão azul */
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    margin-top: 1rem; /* Espaçamento acima do botão */
+}
+
+button:hover {
+    background-color: #1E40AF; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "elevar" ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Bordas leves */
+}
+
+th { /* Cabeçalho da tabela azul escuro */
+    color: #1E3A8A;
+}
+
+tr:hover {
+    background-color: #F1F5F9; /* Fundo da linha em cinza claro ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #1E3A8A; /* Rodapé azul escuro */
+    color: white;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* Fundo do modal em branco */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Pode ajustar conforme necessário */
+}
+
+#editTaskModal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* styles.css */
+tr.dragging {
+    opacity: 0.5; /* Diminui a opacidade do item arrastado */
+}
+
+tr.over {
+    border: 2px dashed #000; /* Estilo visual para indicar onde o item será solto */
+}

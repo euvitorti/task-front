@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../style/style.css">
+</head>
+
+<body>
+
+  <main class="login-container">
+    <section class="welcome-message">
+      <h2>Bem-vindo de volta</h2>
+      <p>Por favor, insira suas credenciais para acessar sua conta.</p>
+    </section>
+
+    <section class="login-form">
+      <form id="login-form">
+        <div class="mb-3">
+          <label for="username" class="form-label">Usuário</label>
+          <input type="text" class="form-control" id="username" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <p class="signup-link">Não tem uma conta? <a href="../signin/signin.html">Cadastre-se</a></p>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="../../script/login/login.js"></script>
+</body>
+
+</html>

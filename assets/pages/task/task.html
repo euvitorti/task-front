@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tarefa</title>
+    <link rel="stylesheet" href="../../style/task/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Tarefa</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <form id="taskForm">
+                    <!-- Nome da Tarefa -->
+                    <div class="form-group">
+                        <label for="taskName">Nome da Tarefa:</label>
+                        <input type="text" id="taskName" name="taskName" placeholder="Digite o nome da tarefa" required>
+                    </div>
+
+                    <!-- Custo da Tarefa -->
+                    <div class="form-group">
+                        <label for="taskCost">Custo da Tarefa (R$):</label>
+                        <input type="number" id="taskCost" name="taskCost" step="0.01" min="0"
+                            placeholder="Digite o custo da tarefa" required>
+                    </div>
+
+                    <!-- Data de Vencimento -->
+                    <div class="form-group">
+                        <label for="taskDueDate">Data de Vencimento:</label>
+                        <input type="date" id="taskDueDate" name="taskDueDate" required>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="form-group button-group">
+                        <button type="submit">Cadastrar Tarefa</button>
+                        <button type="button" id="listTasksButton">Listar Tarefas</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <table id="tasks-table">
+                    <thead>
+                        <tr>
+                            <th>Tarefa</th>
+                            <th>Custo</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Os dados das tarefas serão inseridos aqui pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Modal para edição de tarefas -->
+        <div id="editTaskModal" style="display:none;">
+            <div class="modal-content">
+                <span id="closeModal" style="cursor:pointer;">&times;</span>
+                <h2>Editar Tarefa</h2>
+                <form id="editTaskForm">
+                    <div class="form-group">
+                        <label for="editTaskName">Nome:</label>
+                        <input type="text" id="editTaskName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editTaskCost">Custo:</label>
+                        <input type="number" id="editTaskCost" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editTaskDueDate">Data de Vencimento:</label>
+                        <input type="date" id="editTaskDueDate" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oak Tecnologia</p>
+    </footer>
+
+    <!-- Importando os arquivos JavaScript -->
+    <script type="module" src="../../script/task/task.js"></script>
+</body>
+
+</html>
