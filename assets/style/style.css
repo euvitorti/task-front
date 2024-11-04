@@ -13,8 +13,10 @@ body {
   background-color: #FFFFFF; /* Fundo branco para o container */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
-  width: 800px; /* Largura reduzida para um design mais compacto */
-  height: 500px; /* Altura reduzida */
+  width: 800px; /* Largura padrão */
+  height: 500px; /* Altura padrão */
+  max-width: 90%; /* Limita a largura máxima para telas pequenas */
+  flex-direction: row; /* Mantém a direção padrão */
 }
 
 .welcome-message {
@@ -100,4 +102,37 @@ body {
 .signup-link a:hover {
   color: #1E40AF; /* Azul mais escuro ao passar o mouse */
   text-decoration: underline;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Muda para coluna em telas menores */
+    height: auto; /* Altura automática para melhor ajuste */
+  }
+
+  .welcome-message, .login-form {
+    padding: 24px; /* Reduz o padding em telas menores */
+  }
+
+  .welcome-message h2 {
+    font-size: 28px; /* Ajusta o tamanho da fonte */
+  }
+
+  .welcome-message p {
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+  }
+
+  .login-form label {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  .signup-link {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
 }
