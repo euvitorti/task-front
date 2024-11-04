@@ -2,6 +2,10 @@
 
 Este repositório contém o front-end de um sistema de gerenciamento de tarefas, desenvolvido com **HTML5**, **CSS3**, e **JavaScript**. O sistema permite o cadastro, edição, exclusão e reordenação de tarefas, interagindo com um back-end em **Spring Boot**.
 
+
+## Testar a Aplicação 🌐
+Se preferir, você pode testar a aplicação diretamente através do seguinte link: [Site](https://fatto-front-deploy.vercel.app/).
+
 ## Funcionalidades ⚒️
 
 - Interface de usuário intuitiva para gerenciar tarefas.
@@ -33,9 +37,6 @@ Não é necessário nenhum servidor para rodar o front-end, basta abrir o arquiv
 Conectar ao back-end:
 
 Certifique-se de que o [servidor back-end (desenvolvido com Spring Boot)](https://github.com/euvitorti/task) esteja em execução. As interações com as tarefas ocorrerão conforme o usuário utiliza a interface.
-
-Testar a Aplicação 🌐
-Se preferir, você pode testar a aplicação diretamente através do seguinte link: [Site](https://fatto-front-deploy.vercel.app/).
 
 ## Contribuição 🚀
 
